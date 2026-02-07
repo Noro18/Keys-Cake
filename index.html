@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key's Cake & Bakery - Handcrafted Cakes for Every Occasion</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="navigation">
+        <div class="nav-inner">
+            <a href="#home" class="nav-logo">
+                Key's Cake <span>&</span> Bakery
+            </a>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#contact" class="nav-link nav-cta">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-bg">
+            <img src="https://images.pexels.com/photos/7248037/pexels-photo-7248037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Elegant three-tier wedding cake with flowers">
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="hero-badge">Handcrafted With Love</span>
+            <h1 class="hero-title">
+                Where Every Cake<br>
+                <span class="highlight">Tells a Story</span>
+            </h1>
+            <p class="hero-subtitle">
+                Artisan cakes crafted with passion for life's most precious
+                celebrations. From elegant weddings to joyful birthdays,
+                every creation is a masterpiece.
+            </p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-gold">Order Your Cake</a>
+                <a href="#gallery" class="btn-outline-white">View Our Creations</a>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll</span>
+            <i class="fas fa-chevron-down"></i>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-lg">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image-wrapper reveal">
+                    <img src="https://images.pexels.com/photos/16140003/pexels-photo-16140003.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Pastry chefs decorating cakes" class="about-image">
+                    <div class="about-image-accent"></div>
+                </div>
+                <div class="about-text reveal">
+                    <span class="section-label">Our Story</span>
+                    <h2 class="section-title">A Passion Baked<br>Into Every Layer</h2>
+                    <p>
+                        What began as a kitchen filled with flour-dusted dreams has blossomed into
+                        a beloved bakery where artistry meets flavor. Every cake that leaves our
+                        hands carries a piece of our heart and decades of refined craft.
+                    </p>
+                    <p>
+                        We believe that a cake is more than dessert - it is the centerpiece of your
+                        most cherished moments. Using only the finest ingredients and time-honored
+                        techniques, we create edible works of art that taste as extraordinary as
+                        they look.
+                    </p>
+                    <div class="about-signature">Key's Cake & Bakery</div>
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Cakes Crafted</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">10+</div>
+                            <div class="stat-label">Years of Passion</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Happy Clients</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Divider Quote Section -->
+    <section class="divider-quote reveal">
+        <div class="container">
+            <blockquote>
+                <span class="quote-mark">"</span>
+                Life is short, eat the cake. And when you do, make sure it's one
+                that was crafted with love, dusted with dreams, and layered
+                with memories.
+                <cite>Key's Cake & Bakery</cite>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section-lg">
+        <div class="container">
+            <div class="services-header reveal">
+                <span class="section-label">What We Offer</span>
+                <h2 class="section-title">Crafted for Every Occasion</h2>
+                <p class="section-desc">
+                    From intimate celebrations to grand events, our bespoke creations
+                    are tailored to make your moments unforgettable.
+                </p>
+            </div>
+            <div class="services-grid" id="servicesGrid">
+                <!-- Services will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-lg">
+        <div class="container">
+            <div class="gallery-header reveal">
+                <span class="section-label">Our Creations</span>
+                <h2 class="section-title">A Taste of Our Artistry</h2>
+                <p class="section-desc">
+                    Browse through our collection of handcrafted cakes, each one a
+                    unique celebration of flavor and design.
+                </p>
+            </div>
+            <div class="gallery-grid" id="galleryGrid">
+                <!-- Gallery items will be populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox" style="display: none;">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">
+            <i class="fas fa-times"></i>
+        </button>
+        <img id="lightboxImage" src="" alt="">
+    </div>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-lg">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="reveal">
+                    <span class="section-label">Get In Touch</span>
+                    <h2 class="section-title">Let's Create Something<br>Beautiful Together</h2>
+                    <p class="section-desc" style="margin-bottom: 2.5rem;">
+                        Ready to order your dream cake? Reach out to us and let's
+                        start crafting your perfect creation.
+                    </p>
+                    <div class="contact-details">
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Visit Us</strong>
+                                <span>Your address here</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Call Us</strong>
+                                <span>Your phone number here</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Email Us</strong>
+                                <span>Your email here</span>
+                            </div>
+                        </div>
+                        <div class="contact-detail">
+                            <div class="contact-detail-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-detail-text">
+                                <strong>Business Hours</strong>
+                                <span>Your hours here</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Your name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Your email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Your phone number">
+                        </div>
+                        <div class="form-group">
+                            <label for="event">Event Type</label>
+                            <input type="text" id="event" placeholder="e.g. Wedding, Birthday, Anniversary">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" placeholder="Tell us about your dream cake..." rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Send Inquiry</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <h3>Key's Cake <span>&</span> Bakery</h3>
+                    <p>
+                        Handcrafted cakes for life's sweetest moments.
+                        Every creation is baked with love and decorated with passion.
+                    </p>
+                    <div class="footer-signature">Baked with Love</div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Our Specialties</h4>
+                    <ul>
+                        <li><a href="#services">Wedding Cakes</a></li>
+                        <li><a href="#services">Anniversary Cakes</a></li>
+                        <li><a href="#services">Birthday Cakes</a></li>
+                        <li><a href="#services">Custom Creations</a></li>
+                        <li><a href="#services">Event Catering</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> Key's Cake & Bakery. All rights reserved.</p>
+                <p>Crafted with passion, served with love.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
