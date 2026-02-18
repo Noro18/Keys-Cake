@@ -159,7 +159,7 @@ function renderServices() {
 
 function renderGallery() {
     galleryGrid.innerHTML = GALLERY_IMAGES.map((img, i) => `
-        <div class="gallery-item ${img.span} reveal" style="transition-delay: ${i * 0.1}s">
+        <div class="gallery-item ${img.span} reveal" =">
             <img src="${img.url}" alt="${img.alt}" loading="lazy">
             <div class="gallery-item-overlay">
                 <div>
