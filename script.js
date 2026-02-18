@@ -37,51 +37,49 @@ const SERVICES = [
 
 const GALLERY_IMAGES = [
     {
-        url: 'assets/img/wedding 3.jpg',
+        url: 'assets/img/wedding 3.webp',
         alt: 'Elegant white wedding cake with floral accents',
         category: 'Wedding',
         title: 'Blue Serenity',
         span: 'span-tall'
     },
     {
-        url: 'assets/img/Graduation.png',
+        url: 'assets/img/Graduation.webp',
         alt: 'Elegant graduation cake with academic theme and celebratory elements',
         category: 'Graduation',
         title: 'Academic Achievement',
         span: 'span-large'
     },
     {
-        url: 'assets/img/Minecraft.png',
+        url: 'assets/img/Minecraft.webp',
         alt: 'Fun Minecraft-themed birthday cake with pixelated decorations',
         category: 'Birthday',
         title: 'Pixel Party',
         span: 'span-square'
     },
-    
-    
     {
-        url: 'assets/img/WEdding .jpg',
+        url: 'assets/img/WEdding .webp',
         alt: 'Romantic pink wedding cake with cascading roses',
         category: 'Wedding',
         title: 'Ivory Lace',
         span: 'span-tall'
     },
     {
-        url: 'assets/img/Birthday.png',
+        url: 'assets/img/Birthday.webp',
         alt: 'Vibrant birthday cake with colorful sprinkles and candles',
         category: 'Birthday',
         title: 'Celebration Delight',
         span: 'span-tall'
     },
     {
-        url: 'assets/img/Birthday Pink.png',
+        url: 'assets/img/Birthday Pink.webp',
         alt: 'Fun pink birthday cake with colorful decorations',
         category: 'Birthday',
         title: 'Pink Paradise',
         span: 'span-square'
     },
-    
 ];
+
 
 // ========================
 // DOM ELEMENTS
