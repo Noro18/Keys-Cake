@@ -10,7 +10,7 @@ const SERVICES = [
     },
     {
         icon: 'fa-champagne-glasses',
-        title: 'Anniversary Cakes',
+        title: 'Celeration Cakes',
         desc: 'Celebrate milestones with cakes as timeless as your journey together. Custom designs for every year.'
     },
     {
@@ -19,7 +19,7 @@ const SERVICES = [
         desc: 'From whimsical to sophisticated, we create birthday cakes that make wishes come true.'
     },
     {
-        icon: 'fa-sparkles',
+        icon: 'fa-wand-magic-sparkles',
         title: 'Custom Creations',
         desc: 'Your imagination, our artistry. Bespoke cakes designed from scratch for any occasion.'
     },
@@ -29,55 +29,58 @@ const SERVICES = [
         desc: 'Complete dessert spreads featuring cupcakes, pastries, and showstopping centerpiece cakes.'
     },
     {
-        icon: 'fa-chef',
-        title: 'Tasting Sessions',
-        desc: 'Schedule a private tasting to discover your perfect flavor combination and design.'
+        icon: 'fa-building',
+        title: 'Corporate & Branding Cakes',
+        desc: 'Custom cakes designed with company logos, launches, and events in mind.'
     }
 ];
 
 const GALLERY_IMAGES = [
     {
-        url: 'https://images.pexels.com/photos/3923555/pexels-photo-3923555.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-        alt: 'Black and gold luxury wedding cake',
+        url: 'assets/img/wedding 3.jpg',
+        alt: 'Elegant white wedding cake with floral accents',
         category: 'Wedding',
-        title: 'Midnight Elegance',
+        title: 'Blue Serenity',
         span: 'span-tall'
     },
     {
-        url: 'https://images.unsplash.com/photo-1761110657716-1eb3cb62de97?crop=entropy&cs=srgb&fm=jpg&q=85',
-        alt: 'Three tiered white cakes with pink roses',
-        category: 'Wedding',
-        title: 'Rose Garden Tiers',
-        span: ''
+        url: 'assets/img/Graduation.png',
+        alt: 'Elegant graduation cake with academic theme and celebratory elements',
+        category: 'Graduation',
+        title: 'Academic Achievement',
+        span: 'span-large'
     },
     {
-        url: 'https://images.unsplash.com/photo-1761637604976-40612bc4544c?crop=entropy&cs=srgb&fm=jpg&q=85',
-        alt: 'Chocolate cake with almonds',
-        category: 'Celebration',
-        title: 'Chocolate Dream',
-        span: ''
-    },
-    {
-        url: 'https://images.unsplash.com/photo-1769812343875-c40f9ec7f846?crop=entropy&cs=srgb&fm=jpg&q=85',
-        alt: 'Miniature cakes and desserts',
-        category: 'Events',
-        title: 'Petite Delights',
-        span: 'span-wide'
-    },
-    {
-        url: 'https://images.unsplash.com/photo-1634839582502-c5d12a99db7d?crop=entropy&cs=srgb&fm=jpg&q=85',
-        alt: 'Birthday cake with candles',
+        url: 'assets/img/Minecraft.png',
+        alt: 'Fun Minecraft-themed birthday cake with pixelated decorations',
         category: 'Birthday',
-        title: 'Birthday Bliss',
-        span: ''
+        title: 'Pixel Party',
+        span: 'span-square'
+    },
+    
+    
+    {
+        url: 'assets/img/WEdding .jpg',
+        alt: 'Romantic pink wedding cake with cascading roses',
+        category: 'Wedding',
+        title: 'Ivory Lace',
+        span: 'span-tall'
     },
     {
-        url: 'https://images.pexels.com/photos/7248037/pexels-photo-7248037.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
-        alt: 'Elegant three-tier wedding cake with flowers',
-        category: 'Wedding',
-        title: 'Floral Fantasy',
-        span: ''
-    }
+        url: 'assets/img/Birthday.png',
+        alt: 'Vibrant birthday cake with colorful sprinkles and candles',
+        category: 'Birthday',
+        title: 'Celebration Delight',
+        span: 'span-tall'
+    },
+    {
+        url: 'assets/img/Birthday Pink.png',
+        alt: 'Fun pink birthday cake with colorful decorations',
+        category: 'Birthday',
+        title: 'Pink Paradise',
+        span: 'span-square'
+    },
+    
 ];
 
 // ========================
@@ -242,40 +245,7 @@ function observeRevealElements() {
 // CONTACT FORM
 // ========================
 
-contactForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    
-    const name = document.getElementById('name').value;
-    const email = document.getElementById('email').value;
-    const phone = document.getElementById('phone').value;
-    const event = document.getElementById('event').value;
-    const message = document.getElementById('message').value;
-    
-    // You can add your own form handling logic here
-    // For now, we'll just log the data and show a success message
-    console.log('Form submitted:', {
-        name,
-        email,
-        phone,
-        event,
-        message
-    });
-    
-    // Show success message
-    const button = contactForm.querySelector('.btn-submit');
-    const originalText = button.textContent;
-    button.textContent = 'Message Sent!';
-    button.style.background = 'var(--gold-dark)';
-    
-    // Reset form
-    contactForm.reset();
-    
-    // Reset button after 3 seconds
-    setTimeout(() => {
-        button.textContent = originalText;
-        button.style.background = '';
-    }, 3000);
-});
+
 
 // ========================
 // INITIALIZE

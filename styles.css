@@ -78,6 +78,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
     height: 80px;
 }
 
@@ -140,6 +141,7 @@ button {
     background: var(--gold);
     color: white !important;
     padding: 10px 24px !important;
+    white-space: nowrap !important;
     border-radius: 50px;
     font-weight: 700 !important;
     letter-spacing: 0.1em !important;
@@ -157,6 +159,22 @@ button {
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
 }
+
+@media (max-width: 480px) {
+    .nav-logo {
+        font-size: 1rem; /* smaller logo text */
+    }
+
+    .nav-cta {
+        padding: 6px 16px;
+        font-size: 0.65rem;
+    }
+
+    .nav-links {
+        gap: 1rem; /* smaller gap between links */
+    }
+}
+
 
 /* Mobile menu toggle */
 .mobile-toggle {
@@ -189,7 +207,7 @@ button {
     transform: rotate(-45deg) translate(5px, -5px);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .mobile-toggle {
         display: block;
     }
@@ -725,6 +743,16 @@ button {
     .gallery-item.span-wide {
         grid-column: span 2;
     }
+
+    .gallery-item.span-square {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    .gallery-item.span-large {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
 }
 
 /* ====================== */
@@ -830,7 +858,7 @@ button {
 }
 
 .contact-form {
-    display: flex;
+    display: none;
     flex-direction: column;
     gap: 1.5rem;
 }
