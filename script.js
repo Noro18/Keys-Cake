@@ -280,3 +280,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         }
     });
 });
+
+// ========================
+// Whatsapp Click Handler
+// ========================
+
+const whatsappNumber = "67077279361";
+
+document.querySelectorAll(".contact-whatsapp").forEach(link => {
+    link.setAttribute("href", `https://wa.me/${whatsappNumber}`);
+});
