@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="preload" as="image" href="assets/img/Background-fin.webp">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
 </head>
 <body>
     <!-- Navigation -->
@@ -16,7 +19,7 @@
         <div class="nav-inner">
 
             <a href="#home" class="nav-logo">
-                <span class="logo"><img src="assets/img/logo.png" style="width: 40px; height: auto;" loading="lazy"></span>
+                <span class="logo"><img src="assets/img/logo.png" style="width: 40px; height: 40px;" loading="lazy"></span>
                 Key's Cake <span>&</span> Bakery
             </a>
             <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
@@ -39,7 +42,7 @@
     <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="hero-bg">
-            <img src="assets/img/Background-fin.webp" loading="lazy" alt="Elegant three-tier wedding cake with flowers">
+            <img src="assets/img/Background-fin.webp" fetchpriority="high" decoding="async" alt="Elegant three-tier wedding cake with flowers">
         </div>
         <div class="hero-overlay"></div>
         <div class="hero-content">
@@ -272,6 +275,6 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>

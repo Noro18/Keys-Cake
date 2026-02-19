@@ -102,13 +102,25 @@ const currentYearSpan = document.getElementById('currentYear');
 // ========================
 
 // Scroll effect on nav
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-        nav.classList.add('scrolled');
-    } else {
-        nav.classList.remove('scrolled');
+let ticking = false;
+
+function updateNavScrolled() {
+    const shouldBeScrolled = window.scrollY > 50;
+    nav.classList.toggle('scrolled', shouldBeScrolled);
+    ticking = false;
+}
+
+function onScroll() {
+    if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(updateNavScrolled);
     }
-});
+}
+
+window.addEventListener('scroll', onScroll, { passive: true });
+
+// Ensure initial state is correct on page load
+updateNavScrolled();
 
 // Mobile menu toggle
 mobileToggle.addEventListener('click', () => {
@@ -159,7 +171,7 @@ function renderServices() {
 
 function renderGallery() {
     galleryGrid.innerHTML = GALLERY_IMAGES.map((img, i) => `
-        <div class="gallery-item ${img.span} reveal" =">
+        <div class="gallery-item ${img.span} reveal">
             <img src="${img.url}" alt="${img.alt}" loading="lazy">
             <div class="gallery-item-overlay">
                 <div>
